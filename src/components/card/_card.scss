@@ -6,6 +6,18 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 50px;
     gap: 40px;
+    @media (max-width : 1200px) {
+        grid-template-columns: 1fr 1fr;
+
+    }
+    @media (max-width : 768px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 20px 3%;
+        background-color: $tertiary-color;
+        padding: 0;
+        
+    }
     &__content {
         position: relative;
         display: flex;
@@ -13,8 +25,6 @@
         height: 300px;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
         border-radius: 10px;
-        overflow: hidden;
-        
     }
     &__img {
         width: 100%;

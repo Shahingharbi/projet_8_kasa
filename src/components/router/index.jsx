@@ -3,6 +3,7 @@ import Home from '../../pages/home';
 import Header from '../header';
 import React from 'react';
 import Footer from '../footer';
+import About from '../../pages/about';
 
 function Router() {
     return (
@@ -10,6 +11,7 @@ function Router() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path='/about' element={<About />} />
             </Routes>
             <Footer />
         </div>

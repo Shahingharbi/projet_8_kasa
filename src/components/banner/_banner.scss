@@ -3,6 +3,10 @@
     position: relative;
     display: flex;
     margin: 3%;
+    @media (max-width : 768px) {
+        height: 111px;
+
+    }
     img {
         object-fit: cover;
         width: 100%;
@@ -19,6 +23,7 @@
             display: flex;
             justify-content: flex-start;
             height: 111px;
+            width: 100%;
         }
         h1 {
             color: $tertiary-color;
