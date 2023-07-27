@@ -1,0 +1,9 @@
+@import "./base/generale" ;
+
+@import "./utils/mixins" ;
+@import "./utils/variables";
+
+@import "../components/header/header";
+@import "../components/banner/banner";
+@import "../components/card/card";
+@import "../components/footer/footer";
