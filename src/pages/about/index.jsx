@@ -5,7 +5,7 @@ function About() {
   return (
     <main>
         <Banner />
-        testttt
+        testtt
     </main>
   )
 }
