@@ -9,7 +9,7 @@ function Banner() {
         </div>
         <div className='banner__txt'>
             <h1>
-                Chez vous, partout, et ailleurs
+                Chez vous, partout et ailleurs
             </h1>
         </div>
     </section>
