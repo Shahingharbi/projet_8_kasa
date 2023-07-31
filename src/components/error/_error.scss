@@ -1,0 +1,32 @@
+.error {
+    @include flex-center;
+    flex-direction: column;
+    padding-bottom: 80px;
+    &__number {
+        font-size: 288px;
+        font-weight: 700;
+        color: $primary-color;
+        margin: 20px;
+        @media (max-width : 768px) {
+            font-size: 96px;
+        }
+    }
+    &__text {
+        font-size: 36px;
+        color: $primary-color;
+        text-align: center;
+        padding-bottom: 30px;
+        @media (max-width : 768px) {
+            font-size: 18px;
+        }
+    }
+    &__link {
+        text-decoration: underline;
+        color: $primary-color;
+        font-size: 18px;
+        text-align: center;
+        @media (max-width : 768px) {
+            font-size: 14px;
+        }
+    }
+}
