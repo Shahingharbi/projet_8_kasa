@@ -1,0 +1,35 @@
+.collapse {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+    &__visible {
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+        height: 25px;
+    }
+    &__title {
+        color: $tertiary-color;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    &__cacher {
+        display: flex;
+        justify-content: center;
+        background-color: $secondary-color;
+        width: 70%;
+        padding: 5px 10px ;
+    }
+    &__description {
+        color: $primary-color;
+    }
+    &__image {
+        cursor: pointer;
+    }
+}
