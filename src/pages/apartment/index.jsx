@@ -1,8 +1,11 @@
 import React from 'react'
+import Carrousel from '../../components/carrousel'
 
 function Apartment() {
   return (
-    <div>Appartment</div>
+    <main>
+      <Carrousel />
+    </main>
   )
 }
 
