@@ -1,0 +1,24 @@
+.host {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &__nom {
+        color: $primary-color;
+        font-size: 18px;
+        text-align: right;
+        width: 80px;
+        margin: 10px;
+        @media (max-width : 768px) {
+            font-size: 12px;
+        }
+    }
+    &__photo {
+        border-radius: 100%;
+        width: 64px;
+        height: 64px;
+        @media (max-width : 768px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

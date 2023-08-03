@@ -1,0 +1,15 @@
+.rate {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    @media (max-width : 768px ) {
+        padding: 0;
+    }
+    &__etoile {
+        width: 24px;
+        @media (max-width : 768px) {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

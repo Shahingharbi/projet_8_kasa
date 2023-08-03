@@ -1,0 +1,58 @@
+.carrousel {
+    height: 415px;
+    width: 100%;
+    position: relative;
+    margin: 50px 0;
+    @media (max-width : 768px) {
+        height: 255px;
+        margin: 10px 0;
+    }
+    &__container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    &__flechegauche {
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        left: 2%;
+        @media (max-width : 768px) {
+            width: 12px;
+            top: 50%;
+        }
+    }
+    &__flechedroite {
+        position: absolute;
+        z-index: 1;
+        top: 38%;
+        right: 2%;
+        @media (max-width : 768px) {
+            width: 24px;
+            top: 50%;
+        }
+    }
+    &__numero {
+        color: $tertiary-color;
+        position: absolute;
+        bottom: 5%;
+        right: 45%;
+        font-size: 18px;
+        @media (max-width : 768px) {
+            display: none;
+        }
+    }
+}
+
+main {
+    margin: 0 100px;
+    @media (max-width : 768px) {
+        margin: 0 10px;
+    }
+}

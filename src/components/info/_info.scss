@@ -1,0 +1,36 @@
+.info {
+    &__titre {
+        color: $primary-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+        margin-bottom: 10px;
+        @media (max-width : 768px) {
+            font-size: 18px;
+        }
+    }
+    &__localisation {
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        @media (max-width : 768px) {
+            font-size: 14px;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width : 768px) {
+            flex-direction: column;
+        }
+    }
+    &__droite {
+        @media (max-width : 768px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
