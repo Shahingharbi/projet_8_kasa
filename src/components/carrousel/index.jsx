@@ -35,35 +35,46 @@ function Carrousel(props) {
   };
 
   if (!logement) {
-    return <div>Loading...</div>;
+    return <div>Chargement...</div>;
   }
+
+  const afficherCarrouselComplet = logement.pictures.length > 1;
 
   return (
     <section className='carrousel'>
-      <img 
-        className='carrousel__flechegauche'
-        src={chevronGauche} 
-        alt="chevron gauche" 
-        onClick={imagePrecedente} 
-      />
-      <img 
-        className='carrousel__flechedroite'
-        src={chevronDroite} 
-        alt="chevron droite" 
-        onClick={imageSuivante} 
-      />
+      {afficherCarrouselComplet && (
+        <>
+          <img
+            className='carrousel__flechegauche'
+            src={chevronGauche}
+            alt="chevron gauche"
+            onClick={imagePrecedente}
+          />
+          <img
+            className='carrousel__flechedroite'
+            src={chevronDroite}
+            alt="chevron droite"
+            onClick={imageSuivante}
+          />
+        </>
+      )}
       <div className='carrousel__container'>
-        <img 
-        className='carrousel__image'
-        src={logement.pictures[premiereImage]} 
-        alt={logement.title} 
+        <img
+          className='carrousel__image'
+          src={logement.pictures[premiereImage]}
+          alt={logement.title}
         />
-        <p className='carrousel__numero'>
-        {premiereImage + 1}/{logement.pictures.length}
-        </p>
+        {afficherCarrouselComplet && (
+          <p className='carrousel__numero'>
+            {premiereImage + 1}/{logement.pictures.length}
+          </p>
+        )}
       </div>
     </section>
   );
 }
 
 export default Carrousel;
+
+
+

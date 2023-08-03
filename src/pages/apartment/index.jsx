@@ -7,10 +7,17 @@ import Tag from '../../components/tag';
 import Collapse from '../../components/collapse';
 import Host from '../../components/host';
 import Rate from '../../components/rate';
+import Error from '../../components/error';
 
 function Apartment() {
   const { id } = useParams();
   const appartementCourant = data.find(appartement => appartement.id === id)
+
+  if (!appartementCourant) {
+    return (
+      <Error />
+    )
+  }
   return (
     <main>
       <Carrousel logementId ={id}
