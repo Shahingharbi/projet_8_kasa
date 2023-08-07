@@ -11,7 +11,7 @@ function Collapse({ titre, description }) {
     CollapseDesplie(!estDeplie);
   };
 
-  // Vérifier si la page est celle du logement
+
   const LogementPage = location.pathname.includes('/logement/');
 
   return (
